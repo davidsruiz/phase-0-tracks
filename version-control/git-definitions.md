@@ -2,7 +2,7 @@
 
 **Instructions: ** Define each of the following Git concepts.
 
-* What is version control?  Why is it useful?
-* What is a branch and why would you use one?
-* What is a commit? What makes a good commit message?
-* What is a merge conflict?
+* What is version control?  Why is it useful? - *Version control allows for any project to be broken down into interchangable components and have each of those components manipulated individually over time in such a way that all changes can be tracked down and brought back if nesecary. This is very useful to maintain scalability on large projects involving 1 or more persons.*
+* What is a branch and why would you use one? - *Branches are seperate spaces where multiple changes to a repository, in the form of commits, can be made without affecting the original. Branches are usuallly used for working on new additions or features while keeping the master branch clean and pure.*
+* What is a commit? What makes a good commit message? - *A commit is like a save state, where a snapshot of changed items are saved together in a particular point in time. Commits work on a branch level which helps keep things seperate and organized. Commits come with a brief message that states which changes were made along with any additional relevant information.*
+* What is a merge conflict? - *A merge conflict occurs when changes were made on the same item. The purpose of a merge is to combine different changes to the same document, but if multiple changes were made to the same part of the document, say one person modifed a line while another removed it, it causes a merge conflict. Essentially it gets flagged to be resolved as merging is difficult or not obvious.*
