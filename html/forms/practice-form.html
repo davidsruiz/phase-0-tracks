@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+</head>
+<body>
+<form action="success.html">
+	<fieldset>
+		<div>
+	 		<label>Song</label>
+			<input type="text" name="song-title" />
+		</div>
+		<div>
+	 		<label>Arist</label>
+			<input type="text" name="artist" />
+		</div>
+		<div>
+	 		<label>Genre</label>
+			<input type="text" name="genre" />
+		</div>
+	</fieldset>
+	<fieldset>
+		<div>
+			<label>Volume</label>
+			<input type="range" name="volume" max="100" min="0" value="20" />
+			<input type="number" name="volume-n" max="100" min="0" value="20" />
+		</div>
+		<div>
+	 		<label>Equalizer</label>
+			<select name="EQ">
+				<option value="R">Rock</option>
+				<option value="C">Classical</option>
+				<option value="E">Electronic</option>
+				<option value="P">Pop</option>
+			</select>
+		</div>
+	</fieldset>
+	<fieldset>
+		<div>
+	 		<label>Feedback</label>
+	 	</div>
+		<div>
+			<textarea></textarea>
+		</div>
+		<div>
+			<label>Email: </label><input type="email" name="email" />
+		</div>
+	</fieldset>
+	<fieldset>
+		<button type="submit">Submit</button>
+	</fieldset>
+</form>
+</body>
+</html>
