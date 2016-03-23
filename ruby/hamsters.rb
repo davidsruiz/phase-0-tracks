@@ -2,6 +2,7 @@ puts "What's your hamster's name?"
 
 name = gets.chomp
 
+volume = nil
 puts "What's your hamster's volume level (1-10)?"
 
 loop do
@@ -36,3 +37,17 @@ if age == ""
 else
   age = age.to_i
 end
+
+puts "------------------------"
+
+puts "Hamster name: #{name}"
+
+puts "Volume level: #{volume}"
+
+puts "Fur color: #{fur_color}"
+
+puts "Adoptability: #{adoptable}"
+
+puts "Age: #{age}"
+
+puts "------------------------"
