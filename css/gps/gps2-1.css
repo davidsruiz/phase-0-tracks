@@ -1,3 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 * {
-	background-color: blue;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+body {
+  margin: 0px;
+  padding: 24px 48px;
+}
+
+.column-1, .column-2 {
+  display: inline-block;
+  width: 46%;
+  margin: 0px 12px;
+  
+  vertical-align: top;
+}
+
+footer {
+  margin: 48px 0px;
 }
