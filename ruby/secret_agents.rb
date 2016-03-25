@@ -24,6 +24,8 @@ add new l new string
 
 =end
 
+# Methods #
+
 def encrypt(str) 
   
   str.downcase!
@@ -54,7 +56,7 @@ end
 
 
 #puts encrypt("weekend")
-puts encrypt("zebra")
+#puts encrypt("zebra")
 
 
 def decrypt(str)
@@ -99,15 +101,35 @@ def decrypt(str)
 end
 
 
-puts decrypt("xfflfoe")
+#puts decrypt("xfflfoe")
 
 
-puts encrypt("abc")
-puts encrypt("zed")
-puts decrypt("bcd")
-puts decrypt("afe")
-
-puts decrypt(encrypt("The duck flies at midnight"))
+#puts encrypt("abc")
+#puts encrypt("zed")
+#puts decrypt("bcd")
+#puts decrypt("afe")
 
 #puts decrypt(encrypt("The duck flies at midnight"))
+
+#puts decrypt(encrypt("The duck flies at midnight"))
+
+
+# Step-by-step code #
+
+puts "Would you like to decrypt or encrypt your password?"
+answer = gets.chomp
+
+puts "What is your password?"
+password = gets.chomp
+
+if answer == "encrypt"
+  puts encrypt password
+else
+  puts decrypt password
+end
+
+
+
+
+
 
