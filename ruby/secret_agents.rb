@@ -26,6 +26,8 @@ add new l new string
 
 def encrypt(str) 
   
+  str.downcase!
+  
   counter = 0
   length = str.length
   newString = ""
@@ -36,6 +38,8 @@ def encrypt(str)
     
     if currentLetter == "z"
       newString = newString + "a"
+    elsif currentLetter == " "
+      newString = newString + " ";
     else    
       newString = newString + currentLetter.next
     end
@@ -55,6 +59,8 @@ puts encrypt("zebra")
 
 def decrypt(str)
   
+  str.downcase!
+  
   counter = 0
   length = str.length
   newString = ""
@@ -67,6 +73,10 @@ def decrypt(str)
     if currentLetter == "a"
       
       newString = newString + "z";
+      
+    elsif currentLetter == " "
+      
+      newString = newString + " ";
       
     else
       
@@ -97,4 +107,7 @@ puts encrypt("zed")
 puts decrypt("bcd")
 puts decrypt("afe")
 
+puts decrypt(encrypt("The duck flies at midnight"))
+
+#puts decrypt(encrypt("The duck flies at midnight"))
 
