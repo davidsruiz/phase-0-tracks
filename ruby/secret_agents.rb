@@ -32,8 +32,13 @@ def encrypt(str)
   
   while counter < length
     
-    newString = newString + str[counter].next
-    # puts newString
+    currentLetter = str[counter]
+    
+    if currentLetter == "z"
+      newString = newString + "a"
+    else    
+      newString = newString + currentLetter.next
+    end
     
     counter += 1
   end
@@ -44,7 +49,9 @@ end
 
 
 
-puts encrypt("weekend")
+#puts encrypt("weekend")
+puts encrypt("zebra")
+
 
 def decrypt(str)
   
@@ -57,15 +64,24 @@ def decrypt(str)
     
     currentLetter = str[counter]
     
-    place = "abcdefghijklmnopqrstuvwxyz".index(currentLetter) 
+    if currentLetter == "a"
+      
+      newString = newString + "z";
+      
+    else
+      
+      place = "abcdefghijklmnopqrstuvwxyz".index(currentLetter) 
+
+      newPlace = place - 1
+
+      nextLetter = "abcdefghijklmnopqrstuvwxyz"[newPlace]
+
+      newString = newString + nextLetter;
+      
+    end
     
-    newPlace = place - 1
+      counter += 1
     
-    nextLetter = "abcdefghijklmnopqrstuvwxyz"[newPlace]
-    
-    newString = newString + nextLetter;
-    
-    counter += 1
   end
   
   return newString
@@ -75,5 +91,10 @@ end
 
 puts decrypt("xfflfoe")
 
+
+puts encrypt("abc")
+puts encrypt("zed")
+puts decrypt("bcd")
+puts decrypt("afe")
 
 
