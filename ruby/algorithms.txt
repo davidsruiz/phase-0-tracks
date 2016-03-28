@@ -1,0 +1,12 @@
+-- ALGORITHMS --
+
+HANDWASHING
+	- IF hands are NOT clean
+		- Proceed to handwashing station
+		- Open water
+		- Rinse hands
+			- Add soap
+			- Rinse hands again UNTIL soap is gone
+			- If hands have not passed quality control tests, repeat from "Add soap" step
+		- Dry hands
+		
