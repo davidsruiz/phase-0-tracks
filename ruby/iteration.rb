@@ -58,3 +58,58 @@ end
 p pizza_toppings
 
 
+# Number 1
+
+numbers = [1, 2, 3, 4, 5]
+
+numbers.each do |num|
+  
+  numbers.delete(num) if num.even?
+  
+end
+
+p numbers
+
+
+# Number 2
+
+numbers = [1, 2, 3, 4, 5]
+
+new_numbers =[]
+
+numbers.each do |num|
+  
+  new_numbers << num if num.odd?
+  
+end
+
+p new_numbers
+
+
+# Number 3
+
+numbers = [1, 2, 3, 4, 5]
+
+numbers.keep_if do |num|
+  
+  num > 3
+  
+end
+
+p numbers
+
+
+# Number 4
+
+numbers = [1, 2, 3, 4, 5, -670]
+
+new_numbers = numbers.drop_while do |num|
+  
+  num <= 2
+  
+end
+
+p new_numbers
+
+
+
