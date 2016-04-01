@@ -44,5 +44,17 @@ end
 # after hash each call
 p phone_book
 
+# MAP! #
+
+# before array map! call
+p pizza_toppings
+
+# array map! call
+pizza_toppings.map! do |topping|
+  "extra " + topping
+end
+
+# after array map! call
+p pizza_toppings
 
 
