@@ -11,8 +11,12 @@ class Santa
 
 	# getter methods
 
-	def reindeer_ranking
-		@reindeer_ranking
+	def gender
+		@gender
+	end
+	
+	def ethnicity
+		@ethnicity
 	end
   
   def speak
@@ -21,6 +25,14 @@ class Santa
   
   def eat_milk_and_cookies(cookie_type)
   	puts "That was a good #{cookie_type} cookie!"
+  end
+
+  def celebrate_birthday
+  	++@age
+  end
+
+  def get_mad_at(reindeer)
+  	if 
   end
 
 end
