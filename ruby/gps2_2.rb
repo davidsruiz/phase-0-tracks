@@ -78,3 +78,34 @@ add_item(food, "Ice Cream", 4)
 remove_item(food, "Lemonade")
 update_item(food, "Ice Cream", 1)
 print_list(food)
+
+=begin
+What did you learn about pseudocode from working on this challenge?
+	Regardless of everyone having their own style, the core
+	skeleton, the idea that makes up the escence of the program
+	is the same.
+What are the tradeoffs of using arrays and hashes for this challenge?
+	Hashes was more suited for this kind of computation. In order 
+	to complete the same with Array it world take two one holding 
+	the name and the other holding the amount which would have 
+	gotten tedious and messy. Similarly if both were stored in a 
+	single entry in the array, say seperated by a space, its 
+	readability would be reduced drastically.
+What does a method return?
+	A method can return all data types including nil and blocks
+	of other code. The purpose of returning something is to 
+	provide communication between methods as a way of
+	encapsulating data.
+What kind of things can you pass into methods as arguments?
+	A method can take all data types as well, including nil and
+	other code blocks.
+How can you pass information between methods?
+	A method should be as generic as possible and take any 
+	variables of the problem AS ARGUMENTS. That method or other
+	methods can return appropriate values to keep the information
+	flow going.
+What concepts were solidified in this challenge, and what concepts are still confusing?
+	The purpose of methods and the functionality they provide as
+	the solvers of a specific problem assigned. Together they can
+	solve much larger problems.
+=end
