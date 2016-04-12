@@ -1,8 +1,8 @@
 
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [by myself, with: Gregor Destrée].
+# We spent [1:20] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # require_relative has a local data load path as opposed to require which can be
