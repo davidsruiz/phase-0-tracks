@@ -39,3 +39,11 @@ newCar.drive();
 oldCar.drive();
 
 console.log(newCar, oldCar, fastCar);
+
+
+
+// loop
+
+for(var key in newCar) {
+  console.log(newCar[key]);
+}
