@@ -1,4 +1,11 @@
 
+/* Pseudo code */
+// function reverse takes string var type
+	// new string container made to be filled
+	// for loop iterates backwards through the string
+		// and adds character by character to the new string
+	// the end result is returning the newly created string
+//
 
 function reverse(str) {
 	var finalStr = "";
