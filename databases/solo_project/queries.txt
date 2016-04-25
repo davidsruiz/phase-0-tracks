@@ -1,0 +1,63 @@
+Display the information in one table (either table is fine).
+SELECT * FROM passengers;
+
+output:
+1|Joe|3
+2|Bill|4
+3|Trev|3
+4|Sally|4
+5|Megan|2
+6|Larry|1
+7|Michael|4
+8|Alice|3
+
+Update an item that meets some condition (you can choose a condition that makes sense).
+UPDATE passengers SET plane_id=1 WHERE name="Alice";
+
+output:
+1|Joe|3
+2|Bill|4
+3|Trev|3
+4|Sally|4
+5|Megan|2
+6|Larry|1
+7|Michael|4
+8|Alice|1
+
+Display the information in both tables using one query.
+SELECT passengers.id, passengers.name, planes.name FROM passengers, planes WHERE passengers.plane_id = planes.id;
+
+output:
+1|Joe|3|3|Georgetown 9102
+2|Bill|4|4|D.C. 3381
+3|Trev|3|3|Georgetown 9102
+4|Sally|4|4|D.C. 3381
+5|Megan|2|2|Seattle 388
+6|Larry|1|1|Houston 1902
+7|Michael|4|4|D.C. 3381
+8|Alice|1|1|Houston 1902
+
+Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+SELECT passengers.id, passengers.name, planes.name FROM passengers, planes WHERE passengers.plane_id = planes.id;
+
+output:
+1|Joe|Georgetown 9102
+2|Bill|D.C. 3381
+3|Trev|Georgetown 9102
+4|Sally|D.C. 3381
+5|Megan|Seattle 388
+6|Larry|Houston 1902
+7|Michael|D.C. 3381
+8|Alice|Houston 1902
+
+Delete an item that meets some condition (you can choose a condition that makes sense).
+DELETE FROM passengers WHERE name="Michael";
+
+output:
+1|Joe|Georgetown 9102
+2|Bill|D.C. 3381
+3|Trev|Georgetown 9102
+4|Sally|D.C. 3381
+5|Megan|Seattle 388
+6|Larry|Houston 1902
+8|Alice|Houston 1902
