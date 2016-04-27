@@ -4,6 +4,7 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
+
 "iNvEsTiGaTiOn".swapcase
 # => "InVeStIgAtIoN"
 
@@ -32,9 +33,12 @@
 # => "Elementary, my dear Watson!"
 
 "z".ord
+
 # => 122 
 # (What is the significance of the number 122 in relation to the character z?)
 # Answer: Returns the corresponding ASCII value for the character
 
+
 "How many times does the letter ‘a’ appear in this string?".scan("a").length
 #=> 4
+
